@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Tab Menu -->
+    <div class="container menu" id="nav">
+      <div class="subMenu home">
+        <a href="#beranda" onclick="closeNav()"><p>BERANDA</p></a>
+      </div>
+      <div class="subMenu projek">
+        <a href="#projek" onclick="closeNav()"><p>PROJEK</p></a>
+      </div>
+      <div class="subMenu pesan">
+        <a href="#projek" onclick="openChat()"><p>PESAN</p></a>
+      </div>
+      <div class="subMenu cv">
+        <a href="img/cv.jpg" download="cv"><p>DOWNLOAD<br>CV</p></a>
+      </div>
+      <button onclick="openNav()" id="tombolNavBuka" class="buka"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
+      <button onclick="closeNav()" id="tombolNavTutup" class="tutup"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    </div>
+    <!-- Akhir Tab Menu -->
+
+    <!-- Pop Up Chat -->
+    <div class="modal" id="myModal">
+      <div class="modal-konten">
+        <i class="fa fa-times" aria-hidden="true" onclick="closeChat()"></i>
+        <p>Sampaikan Pendapatmu</p>
+        <form action="">
+          <input type="text" placeholder="Nama Lengkap*" required /><br />
+          <input type="text" placeholder="Email*" required /><br />
+          <input type="text" placeholder="Subjek*" required /><br />
+          <textarea name="textareatextarea" id="" cols="30" rows="10" placeholder="Pendapatmu" required></textarea><br />
+          <button>Kirim</button>
+        </form>
+      </div>
+    </div>
+    <!-- Akhir Pop Up Chat -->
+
+    <!-- Kontak Chat -->
+    <div class="kontak">
+      <i class="fa fa-comment" aria-hidden="true" onclick="openChat()"></i>
+    </div>
+    <!-- Akhir Kontak Chat -->
+
+    <!-- Pembukaan -->
+    <div class="container satu" id="beranda">
+      <ul>
+        <li class="huruf">H</li>
+        <li class="huruf">A</li>
+        <li class="huruf">L</li>
+        <li class="huruf">O</li>
+      </ul>
+    </div>
+    <!-- Akhir Pembukaan -->
+
+    <!-- Data Diri -->
+    <div class="container dua">
+      <p class="title">DATA DIRI</p>
+      <div class="contain-dua satu">
+        <div class="subcontain-dua satu">
+          <div class="profil"></div>
+          <svg>
+            <circle cx="110" cy="110" r="110"></circle>
+          </svg>
+        </div>
+        <div class="subcontain-dua dua">
+          <div class="data-diri">
+            <h4>Nama</h4>
+            <p>Nur Isnaini Hanifah</p>
+          </div>
+          <div class="data-diri">
+            <h4>Tempat Tanggal Lahir</h4>
+            <p>Bekasi, 24 Juni 2002</p>
+          </div>
+          <div class="data-diri">
+            <h4>Alamat</h4>
+            <p>Blulukan, Colomadu, Karanganyar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contain-dua dua">
+        Saya adalah mahasiswa Universitas Sebelas Maret yang sedang menempuh semester dua. Sejak kecil saya menyukai untuk mencoba hal-hal baru. Banyak sekali yang sudah saya coba.Salah satu hal baru yang saya coba adalah belajar tentang
+        Web Development. Pertama kali saya mengenal Web Development yaitu saat SMK. Saat itu juga, saya mulai mencari-cari info mengenai Web Development melalui internet dan mencoba-coba membuatnya.
+      </div>
+
+      <div class="contain-dua tiga">
+        <h4>HOBI</h4>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Akhir Data Diri -->
+
+    <!-- Pendidikan -->
+    <div class="container tiga">
+      <div class="contain-tiga satu" id="pendidikan"><p>PENDIDIKAN</p></div>
+      <div class="contain-tiga dua" id="alurPendidikan">
+        <div class="subcontain-tiga satu">
+          <div class="garis satu"></div>
+          <div class="kartu">
+            <div class="titik satu">
+              <span class="ket kanan"
+                >SDN Karangasem IV <br />
+                2009-2013</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subcontain-tiga dua">
+          <div class="garis dua"></div>
+          <div class="kartu">
+            <div class="titik dua">
+              <span class="ket kiri"
+                >SMP N 3 Colomadu <br />
+                2013-2016</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subcontain-tiga tiga">
+          <div class="garis tiga"></div>
+          <div class="kartu">
+            <div class="titik tiga">
+              <span class="ket kanan"
+                >SMK N 6 Surakarta <br />
+                2016-2019</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subcontain-tiga empat">
+          <div class="kartu">
+            <div class="titik empat">
+              <span class="ket kiri"
+                >Universitas Sebelas Maret <br />
+                2020-Sekarang</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Pendidikan -->
+
+    <!-- Organisasi -->
+    <div class="container org">
+      <div class="contain-org satu" id="orgSatu">
+        <div class="subcontain-org satu">
+          <p>Rohis SMK N 6 Surakarta</p>
+        </div>
+        <div class="subcontain-org dua">
+          <p>LSP FKIP UNS</p>
+        </div>
+        <div class="subcontain-org tiga">
+          <p>JN UKMI UNS</p>
+        </div>
+      </div>
+      <div class="contain-org dua" id="orgDua"><p>ORGANISASi</p></div>
+    </div>
+    <!-- Akhir Organisasi -->
+
+    <!-- Kemampuan -->
+    <div class="container empat">
+      <div class="contain-empat satu" id="kemampuan1"><p>KEMAMPUAN</p></div>
+      <div class="contain-empat dua" id="kemampuan2">
+        <div class="subcontain-empat satu">
+          <p>Adobe Illustrator</p>
+          <div class="persen satu">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">85%</div>
+        </div>
+        <div class="subcontain-empat dua">
+          <p>Adobe Premier</p>
+          <div class="persen dua">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">75%</div>
+        </div>
+        <div class="subcontain-empat tiga">
+          <p>Corel Draw</p>
+          <div class="persen tiga">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">80%</div>
+        </div>
+      </div>
+
+      <div class="contain-empat tiga" id="kemampuan3">
+        <div class="subcontain-empat satu">
+          <p>HTML</p>
+          <div class="persen satu">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">85%</div>
+        </div>
+        <div class="subcontain-empat dua">
+          <p>CSS</p>
+          <div class="persen tiga">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">80%</div>
+        </div>
+        <div class="subcontain-empat tiga">
+          <p>JS</p>
+          <div class="persen dua">
+            <svg>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+              <circle cx="70" cy="70" r="70" id="lingkaran"></circle>
+            </svg>
+          </div>
+          <div class="kemampuan">75%</div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Kemampuan -->
+
+    <!-- Projekku -->
+    <div class="container lima" id="projek">
+      <h2>PROJEK</h2>
+      <a href="https://nihanifah246.github.io/web-sekolah/" target="_blank">
+        <div class="contain-lima satu" id="website1">
+          <div class="judul"><h1>Website Peralatan Sekolah</h1></div>
+          <div class="isi">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore assumenda a in voluptatibus eveniet nihil nobis voluptate voluptatem hic quidem?</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://nihanifah246.github.io/web-olahraga/" target="_blank">
+        <div class="contain-lima dua" id="website2">
+          <div class="judul"><h1>Website Program Hidup Sehat</h1></div>
+          <div class="isi">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore assumenda a in voluptatibus eveniet nihil nobis voluptate voluptatem hic quidem?</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://nihanifah246.github.io/web-pila/" target="_blank">
+        <div class="contain-lima satu" id="website3">
+          <div class="judul"><h1>Website Toko PILA</h1></div>
+          <div class="isi">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore assumenda a in voluptatibus eveniet nihil nobis voluptate voluptatem hic quidem?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Akhir Projekku -->
+
+    <!-- Penutup -->
+    <div class="penutup">
+      <p>
+        TERIMA KASIH <br />
+        SUDAH DATANG
+      </p>
+      <dvi class="sosialMedia">
+        <ul>
+          <li>
+            <a href="https://twitter.com/nihanifah246" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/nihanifah246" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="mailto:hanifahnur875@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </dvi>
+    </div>
+    <!-- Akhri Penutup -->
+
+    <!-- Planet 1 -->
+    <!-- <div class="planet" id="containPlanet">
+      <img src="img/Planet7.png" alt="" id="planet1" />
+    </div> -->
+    <!-- Akhir Planet 1 -->
+
+    <script>
+      function openNav() {
+        const nav = document.getElementById("nav");
+        nav.style.bottom = "45px";
+        nav.style.height = "650px";
+        const tombolNavBuka = document.getElementById("tombolNavBuka");
+        tombolNavBuka.style.visibility = "hidden";
+        const tombolNavTutup = document.getElementById("tombolNavTutupa");
+        tombolNav.style.visibility = "visible";
+      }
+
+      function closeNav() {
+        const nav = document.getElementById("nav");
+        nav.style.bottom = "660px";
+        nav.style.height = "50px";
+        const tombolNavBuka = document.getElementById("tombolNavBuka");
+        tombolNavBuka.style.visibility = "visible";
+        const tombolNavTutup = document.getElementById("tombolNavTutupa");
+        tombolNav.style.visibility = "hidden";
+      }
+
+      function openChat() {
+        const nav = document.getElementById("nav");
+        const tombolNavBuka = document.getElementById("tombolNavBuka");
+        const openChat = document.getElementById("myModal");
+        openChat.style.display = "block";
+        nav.style.visibility = "hidden";
+        tombolNavBuka.style.visibility = "hidden";
+      }
+
+      function closeChat() {
+        const nav = document.getElementById("nav");
+        const tombolNavBuka = document.getElementById("tombolNavBuka");
+        const openChat = document.getElementById("myModal");
+        openChat.style.display = "none";
+        nav.style.visibility = "visible";
+        tombolNavBuka.style.visibility = "visible";
+      }
+
+      // Planet 1
+      window.onscroll = function () {
+        if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000) {
+          document.getElementById("alurPendidikan").style.left = "0";
+          document.getElementById("pendidikan").style.right = "0";
+        }
+        if (document.body.scrollTop >= 1600 || document.documentElement.scrollTop >= 1600) {
+          document.getElementById("orgSatu").style.right = "0";
+          document.getElementById("orgDua").style.left = "0";
+        }
+        if (document.body.scrollTop >= 2500 || document.documentElement.scrollTop >= 2500) {
+          document.getElementById("kemampuan1").style.top = "0";
+          document.getElementById("kemampuan2").style.top = "0";
+          document.getElementById("kemampuan3").style.top = "0";
+        }
+        if (document.body.scrollTop >= 3500 || document.documentElement.scrollTop >= 3500) {
+          document.getElementById("website1").style.right = "0";
+        }
+        if (document.body.scrollTop >= 4300 || document.documentElement.scrollTop >= 4300) {
+          document.getElementById("website2").style.left = "0";
+        }
+        if (document.body.scrollTop >= 4800 || document.documentElement.scrollTop >= 4800) {
+          document.getElementById("website3").style.right = "0";
+        }
+      };
+      // Akhir planet 1
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1701 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Inline&family=Monoton&family=Russo+One&family=Train+One&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(22, 22, 61);
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-image: url(img/bg1.png);
+}
+
+.container {
+  width: 90%;
+  height: 650px;
+  /* border: white solid 2px; */
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Menu */
+.container.menu {
+  background-color: rgb(22, 22, 61);
+  border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+  margin: 0 0 0 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  transition: 0.5s;
+  box-shadow: rgb(20, 20, 20, 0.5) 0px 0px 5px 5px;
+  z-index: 4;
+  background-image: url(img/bg1.png);
+}
+
+.subMenu {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(40, 121, 175);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subMenu p {
+  visibility: hidden;
+  font-size: 4px;
+  text-align: center;
+}
+
+.subMenu a {
+  text-decoration: none;
+  color: white;
+}
+
+.subMenu:hover {
+  transform: scale(5);
+  cursor: pointer;
+}
+
+.subMenu:hover p {
+  visibility: visible;
+}
+
+.subMenu.home {
+  position: relative;
+  left: 1000px;
+  top: 100px;
+}
+
+.subMenu.projek {
+  position: relative;
+  left: 300px;
+  top: 200px;
+}
+
+.subMenu.pesan {
+  position: relative;
+  left: 700px;
+  top: 350px;
+}
+
+.subMenu.cv {
+  position: relative;
+  left: 1100px;
+  top: 250px;
+}
+
+.buka {
+  position: relative;
+  bottom: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  height: 20px;
+  background-color: rgb(22, 22, 61);
+  transform: rotate(0deg);
+  visibility: visible;
+}
+
+.buka :hover {
+  cursor: pointer;
+}
+.tutup :hover {
+  cursor: pointer;
+}
+
+.buka .fa {
+  font-size: 20px;
+}
+.tutup .fa {
+  font-size: 20px;
+}
+
+.container.menu,
+.buka,
+.tutup {
+  visibility: visible;
+}
+
+.tutup {
+  position: relative;
+  top: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  height: 20px;
+  background-color: rgb(22, 22, 61);
+  visibility: visible;
+}
+/* Akhir Menu */
+
+/* Modal Pop Up */
+.modal {
+  position: fixed;
+  width: 100%;
+  display: none;
+  z-index: 4;
+  background-color: rgba(158, 158, 158, 0.5);
+  height: 900px;
+  top: 0;
+}
+
+.modal-konten {
+  background-color: white;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+  height: 650px;
+  width: 50%;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.modal-konten .fa {
+  position: absolute;
+  right: 280px;
+  top: 10px;
+  border: white solid 0.5px;
+  border-radius: 50%;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  color: rgb(22, 22, 61);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.modal-konten .fa:hover {
+  cursor: pointer;
+}
+
+.modal-konten p {
+  font-size: 25px;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: rgb(22, 22, 61);
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 40px;
+  border: 0;
+  border-bottom: rgb(22, 22, 61) solid 1px;
+  margin: 10px;
+}
+
+textarea {
+  margin: 10px;
+  border: 0;
+  border-bottom: rgb(22, 22, 61) solid 1px;
+  width: 400px;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+  border: none;
+  background-color: rgb(22, 22, 61);
+  color: white;
+}
+/* Akhir Modal Up*/
+
+/* Kontak Chat */
+.kontak {
+  position: fixed;
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 5;
+}
+
+.kontak .fa {
+  font-size: 40px;
+  padding: 10px 0 0 15px;
+  color: rgb(40, 121, 175);
+}
+
+.kontak .fa:hover {
+  cursor: pointer;
+}
+/* Akhir Kontak chat */
+
+/* Pembukaan */
+
+.container.satu {
+  height: auto;
+  margin-bottom: 30px;
+  padding: 0;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.satu ul {
+  height: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 0 0 0;
+  font-family: "Black Ops One", cursive;
+}
+
+.container.satu li {
+  font-size: 150px;
+  bottom: 20px;
+  position: relative;
+  margin: 0 8px 0 8px;
+}
+
+.huruf:hover {
+  position: relative;
+  transform: scale(1.5);
+  color: rgb(40, 121, 175);
+  cursor: pointer;
+  bottom: 20px;
+  z-index: 3;
+}
+/* Akhri Pembukaan */
+
+/* Data Diri */
+.container.dua {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  overflow: visible;
+}
+
+.container.dua .title {
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+.contain-dua {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contain-dua.satu {
+  flex: 1;
+}
+.subcontain-dua.satu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subcontain-dua.satu svg {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  overflow: visible;
+}
+
+.subcontain-dua.satu svg circle:nth-child(1) {
+  width: auto;
+  height: auto;
+  fill: none;
+  stroke-width: 8;
+  stroke: rgb(40, 121, 175);
+  transform: translate(5px, 5px);
+  stroke-dasharray: 140;
+  stroke-dashoffset: 90;
+  stroke-linecap: round;
+  transform-origin: center;
+  transform: rotate(120deg);
+  animation: berputar 10s linear infinite;
+}
+
+@keyframes berputar {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.profil {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(40, 121, 175);
+  background-image: url(img/profil.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.data-diri h4 {
+  color: rgb(40, 121, 175);
+  font-size: large;
+}
+
+.subcontain-dua.dua {
+  flex: 1;
+}
+
+.contain-dua.dua {
+  flex: 1;
+}
+
+.contain-dua.tiga {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain-dua.tiga h4 {
+  font-size: 40px;
+  color: white;
+  line-height: 10px;
+}
+
+.contain-dua.tiga ul {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contain-dua.tiga ul li {
+  margin: 0 20px 0 20px;
+  position: relative;
+  padding-right: 40px;
+}
+
+.contain-dua.tigaul li a {
+  text-decoration: none;
+}
+
+.contain-dua.tiga ul li a .fa {
+  font-size: 60px;
+  color: rgb(40, 121, 175);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.contain-dua.tiga ul :hover {
+  transform: scale(1.2);
+}
+
+/* Akhir Data Diri */
+
+/* Pendidikan */
+.container.tiga {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: visible;
+  margin-top: 100px;
+}
+
+.contain-tiga.satu {
+  flex: 1;
+  font-size: 70px;
+  position: relative;
+  right: 500px;
+  transition: 0.5s;
+}
+
+.contain-tiga.dua {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  height: 99%;
+  left: 700px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.subcontain-tiga {
+  height: 100%;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.garis {
+  z-index: -1;
+  border-bottom: white dotted 2px;
+  position: relative;
+  left: 140px;
+}
+
+.garis.satu {
+  transform: rotate(20deg);
+  width: 430px;
+  left: 50px;
+  top: 135px;
+}
+
+.garis.dua {
+  transform: rotate(-28deg);
+  width: 348px;
+  right: 40px;
+  top: 128px;
+}
+.garis.tiga {
+  transform: rotate(23deg);
+  width: 400px;
+  right: 190px;
+  top: 120px;
+}
+
+.kartu .titik {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(40, 121, 175);
+  border-radius: 50%;
+}
+
+.titik.satu {
+  top: 50px;
+  left: 40px;
+}
+.titik.dua {
+  top: 38px;
+  left: 450px;
+}
+.titik.tiga {
+  top: 30px;
+  left: 150px;
+}
+.titik.empat {
+  top: 30px;
+  left: 520px;
+}
+
+.kartu {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  border-radius: 10px;
+  left: 0px;
+  top: 0;
+  transition: top 0.5s;
+  display: block;
+}
+
+.titik .ket {
+  visibility: visible;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  background-color: rgb(40, 121, 175);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  opacity: 1;
+  transition: 0.5s;
+  border-color: rgb(40, 121, 175) transparent transparent transparent;
+}
+
+.kartu .ket::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(40, 121, 175) transparent transparent transparent;
+}
+
+.kartu:hover .ket {
+  visibility: visible;
+  opacity: 1;
+  height: 60px;
+}
+
+/* Akhir Pendidikan */
+
+/* Kemapuan */
+.container.empat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  margin-bottom: 200px;
+  overflow: hidden;
+  height: 750px;
+}
+
+.contain-empat {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 99%;
+  padding: 0;
+  width: 80%;
+  justify-content: center;
+  top: 750px;
+  position: relative;
+  transition: top 0.5s;
+}
+
+.contain-empat.satu {
+  font-size: 70px;
+}
+
+.contain-empat.dua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subcontain-empat {
+  width: 200px;
+  height: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subcontain-empat p {
+  position: absolute;
+  margin-top: 210px;
+  font-size: 20px;
+}
+
+.persen {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.persen.dua svg {
+  position: absolute;
+}
+
+.persen svg circle {
+  fill: none;
+  stroke-width: 10;
+  transform: translate(10px, 5px);
+}
+
+.persen.dua svg circle:nth-child(1) {
+  stroke: rgb(228, 244, 255, 0.1);
+  stroke-dashoffset: 0;
+}
+
+.persen.dua svg circle:nth-child(2) {
+  stroke: rgb(40, 121, 175);
+  stroke-dasharray: 330;
+}
+
+.persen.satu svg circle:nth-child(1) {
+  stroke: rgb(228, 244, 255, 0.1);
+  stroke-dashoffset: 0;
+}
+
+.persen.satu svg circle:nth-child(2) {
+  stroke: rgb(40, 121, 175);
+  stroke-dasharray: 400;
+}
+.persen.tiga svg circle:nth-child(1) {
+  stroke: rgb(228, 244, 255, 0.1);
+  stroke-dashoffset: 0;
+}
+
+.persen.tiga svg circle:nth-child(2) {
+  stroke: rgb(40, 121, 175);
+  stroke-dasharray: 370;
+}
+
+.kemampuan {
+  position: absolute;
+  font-size: 50px;
+}
+/* Kemampuan */
+
+/* Penutup */
+.penutup {
+  background-color: rgb(40, 121, 175);
+  height: 700px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+/* Akhir Penutup */
+
+/* Organisasi */
+.container.org {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.contain-org.satu {
+  flex: 1;
+  right: 600px;
+  position: relative;
+  transition: right 0.5s;
+}
+.contain-org.dua {
+  flex: 1;
+  position: relative;
+  left: 6000px;
+  transition: left 0.8s;
+}
+
+.contain-org.satu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.subcontain-org {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: white solid 0.4px;
+  font-size: 20px;
+}
+
+.contain-org.dua {
+  font-size: 80px;
+  text-align: center;
+  padding-right: 60px;
+}
+/* Akhir Organisasi */
+
+/* Projekku */
+
+.container.lima {
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.container.lima a {
+  text-decoration: none;
+}
+
+.contain-lima {
+  margin-right: 1%;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 600px;
+  border-radius: 40px;
+  box-shadow: black -3px 0px 10px 3px;
+  display: block;
+  background-color: rgb(40, 121, 175);
+  margin-top: 100px;
+}
+
+.contain-lima :hover {
+  cursor: pointer;
+}
+
+.container.lima h2 {
+  font-size: 50px;
+  line-height: 0px;
+}
+
+.contain-lima.dua {
+  background-position: right;
+}
+
+.contain-lima.satu .isi {
+  left: 450px;
+  position: relative;
+  top: 0%;
+  line-height: 30px;
+  width: 300px;
+  transition: 0.5s;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contain-lima.satu .judul {
+  width: 400px;
+  position: relative;
+  left: 400px;
+  top: 160px;
+  padding-top: 100px;
+  color: #000;
+  transition: 0.5s;
+  text-align: center;
+  color: white;
+  background-color: rgb(40, 121, 175);
+  z-index: 3;
+}
+.contain-lima.dua .isi {
+  left: 50px;
+  position: relative;
+  top: 0%;
+  line-height: 30px;
+  width: 300px;
+  transition: 0.5s;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contain-lima.dua .judul {
+  position: relative;
+  right: 00px;
+  padding-top: 70px;
+  top: 150px;
+  width: 400px;
+  color: #000;
+  transition: 0.5s;
+  text-align: center;
+  color: white;
+  background-color: rgb(40, 121, 175);
+  z-index: 3;
+}
+
+.contain-lima:hover .judul {
+  top: 100px;
+}
+
+.contain-lima:hover .isi {
+  top: 15%;
+  visibility: visible;
+}
+
+#website1 {
+  position: relative;
+  right: 1100px;
+  transition: right 0.5s;
+  background-image: url(img/websekolah.jpeg);
+  background-size: 400px auto;
+}
+
+#website3 {
+  position: relative;
+  right: 1100px;
+  transition: right 0.5s;
+  background-image: url(img/webpila.jpeg);
+  background-size: 400px auto;
+}
+
+#website2 {
+  position: relative;
+  left: 1100px;
+  transition: left 0.5s;
+  background-image: url(img/web\ olahraga.jpeg);
+  background-size: 400px auto;
+}
+/* Akhri Projekku */
+
+/* Sosial Meidia */
+.sosialMedia {
+  position: relative;
+  bottom: 100px;
+}
+
+.sosialMedia ul {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.sosialMedia ul li {
+  margin: 10px;
+  position: relative;
+}
+
+.sosialMedia ul li a {
+  text-decoration: none;
+}
+
+.sosialMedia ul li a .fa {
+  font-size: 40px;
+  color: rgb(233, 233, 233, 0.3);
+}
+
+.sosialMedia ul li a::before {
+  font-family: fontAwesome;
+  top: 30px;
+  left: 0;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.sosialMedia ul li:nth-child(1) a::before {
+  content: "\f099";
+  color: white;
+  border-bottom: 3px solid white;
+}
+.sosialMedia ul li:nth-child(2) a::before {
+  content: "\f16d";
+  color: white;
+  border-bottom: 3px solid white;
+}
+.sosialMedia ul li:nth-child(3) a::before {
+  content: "\f09b";
+  color: white;
+  border-bottom: 3px solid white;
+}
+.sosialMedia ul li:nth-child(4) a::before {
+  content: "\f0e0";
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.sosialMedia ul li a:hover::before {
+  height: 80%;
+}
+
+/* Akhir Sosial Media */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(img/bg1.png);
+    background-size: 768px auto;
+    background-repeat: repeat-y;
+    min-width: 768px;
+    position: relative;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  .container {
+    width: 768px;
+    height: auto;
+  }
+
+  /* Menu */
+  .container.menu {
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+    margin: 0 0 0 0;
+    top: 0;
+    width: 768px;
+  }
+
+  .subMenu {
+    width: 100px;
+    height: 100px;
+  }
+
+  .subMenu p {
+    font-size: 15px;
+    visibility: visible;
+  }
+
+  .subMenu.home {
+    position: relative;
+    left: 600px;
+    top: 100px;
+  }
+  .subMenu.projek {
+    position: relative;
+    left: 100px;
+    top: 100px;
+  }
+
+  .subMenu.pesan {
+    position: relative;
+    left: 500px;
+    top: 150px;
+  }
+
+  .subMenu.cv {
+    left: 230px;
+    top: 120px;
+  }
+
+  .buka {
+    position: relative;
+    bottom: 400px;
+    height: 20px;
+  }
+
+  .buka .fa {
+    font-size: 20px;
+  }
+  .tutup .fa {
+    font-size: 20px;
+  }
+
+  .tutup {
+    top: 150px;
+  }
+  /* Akhir Menu */
+
+  /* Modal Pop Up */
+  .modal {
+    position: fixed;
+    width: 100%;
+    height: 700px;
+  }
+
+  .modal-konten {
+    height: 550px;
+    width: 70%;
+    padding: 10px;
+  }
+
+  .modal-konten .fa {
+    right: 70px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Akhir Modal Up*/
+
+  /* Kontak Chat */
+  .kontak {
+    right: 30px;
+    bottom: 30px;
+  }
+  /* Akhir Kontak chat */
+
+  /* Pembukaan */
+  .container.satu ul {
+    height: 200px;
+    list-style: none;
+    flex-direction: row;
+    padding: 0px 0 0 0;
+    font-family: "Train One", cursive;
+  }
+  /* Akhri Pembukaan */
+
+  /* Data Diri */
+  .container.dua {
+    height: 800px;
+  }
+
+  .contain-dua {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contain-dua.tiga {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Akhir Data Diri */
+
+  /* Pendidikan */
+  .container.tiga {
+    flex-direction: column;
+    margin-top: 100px;
+    height: 800px;
+  }
+
+  .contain-tiga.dua {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: 99%;
+    left: 0px;
+    transition: 0.5s;
+    position: relative;
+    width: 750px;
+    transform: scale(0.95);
+  }
+
+  .garis.satu {
+    transform: rotate(15deg);
+    width: 430px;
+    right: 250px;
+    top: 120px;
+  }
+
+  .garis.dua {
+    transform: rotate(-23deg);
+    width: 340px;
+    right: 230px;
+    top: 110px;
+  }
+  .garis.tiga {
+    transform: rotate(20deg);
+    width: 400px;
+    right: 170px;
+    top: 110px;
+  }
+
+  .titik.satu {
+    top: 50px;
+    left: 30px;
+  }
+  .titik.dua {
+    top: 30px;
+    left: 450px;
+  }
+  .titik.tiga {
+    top: 30px;
+    left: 150px;
+  }
+  .titik.empat {
+    top: 30px;
+    left: 520px;
+  }
+
+  /* Akhir Pendidikan */
+
+  /* Kemapuan */
+  .contain-empat {
+    flex-direction: row;
+    height: 99%;
+    padding: 0;
+    width: 80%;
+    justify-content: center;
+    top: 750px;
+  }
+
+  /* Akhir Kemampuan */
+
+  /* Penutup */
+  .penutup {
+    background-color: rgb(40, 121, 175);
+    height: 700px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 200px;
+    box-sizing: border-box;
+  }
+  /* Akhir Penutup */
+
+  /* Organisasi */
+  .container.org {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contain-org.satu {
+    order: 2;
+    right: 0px;
+  }
+  .contain-org.dua {
+    left: 20px;
+    padding-left: 50px;
+  }
+  /* Akhir Organisasi */
+
+  /* Projekku */
+
+  .container.lima {
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  .contain-lima {
+    margin-right: 1%;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 600px;
+    border-radius: 40px;
+    box-shadow: black -3px 0px 10px 3px;
+    display: block;
+    background-color: rgb(40, 121, 175);
+    margin-top: 100px;
+  }
+
+  .contain-lima.satu .isi {
+    left: 370px;
+    position: relative;
+    top: 0%;
+    line-height: 30px;
+    width: 300px;
+    visibility: hidden;
+  }
+
+  .contain-lima.satu .judul {
+    width: 350px;
+    position: relative;
+    left: 350px;
+    top: 160px;
+    padding-top: 100px;
+    z-index: 3;
+  }
+  .contain-lima.dua .isi {
+    left: 50px;
+    position: relative;
+    top: 0%;
+    line-height: 30px;
+    width: 300px;
+  }
+
+  .contain-lima.dua .judul {
+    position: relative;
+    right: 00px;
+    padding-top: 70px;
+    top: 150px;
+    width: 350px;
+  }
+
+  #website1 {
+    position: relative;
+    right: 1100px;
+    background-size: 350px auto;
+    right: 0;
+  }
+
+  #website3 {
+    position: relative;
+    right: 1100px;
+    background-size: 350px 650px;
+    left: 0;
+  }
+
+  #website2 {
+    position: relative;
+    left: 1100px;
+    background-size: 350px auto;
+    right: 0;
+  }
+  /* Akhri Projekku */
+}
+/* Akhir Tablet */
+
+/* ---- Smartphone -----*/
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(img/bg1.png);
+    background-size: 375px auto;
+    background-repeat: repeat-y;
+    min-width: 375px;
+    position: relative;
+    margin: 0;
+  }
+
+  .container {
+    width: 375px;
+    height: auto;
+  }
+
+  /* Kontak Chat */
+  .kontak {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 550px;
+    position: fixed;
+  }
+
+  .kontak .fa {
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+  }
+  /* Akhir Kontak chat */
+
+  /* Modal Pop Up */
+  .modal {
+    width: 375px;
+    height: 100%;
+  }
+
+  .modal-konten {
+    height: 94%;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .modal-konten .fa {
+    right: 10px;
+    top: 10px;
+  }
+
+  .modal-konten p {
+    font-size: 25px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  /* Akhir Moda Up*/
+
+  /* Menu */
+  .container.menu {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: 0;
+    position: fixed;
+    width: 375px;
+    height: 40px;
+  }
+
+  .subMenu {
+    width: 100px;
+    height: 100px;
+    transition: 0;
+  }
+
+  .subMenu p {
+    visibility: visible;
+    font-size: 15px;
+  }
+
+  .subMenu.home {
+    left: 30px;
+    top: 50px;
+  }
+
+  .subMenu.projek {
+    left: 200px;
+    top: 70px;
+  }
+
+  .subMenu.pesan {
+    left: 60px;
+    top: 120px;
+  }
+
+  .subMenu.cv {
+    left: 230px;
+    top: 120px;
+  }
+
+  .buka {
+    bottom: 400px;
+    height: 20px;
+  }
+
+  .tutup {
+    top: 130px;
+  }
+  /* Akhir Menu */
+
+  /* Pembukaan */
+  .container.satu {
+    height: auto;
+    margin-bottom: 30px;
+    padding: 0;
+    height: 350px;
+  }
+
+  .container.satu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0 0 0;
+  }
+
+  .container.satu li {
+    font-size: 80px;
+    font-weight: 600;
+  }
+  /* Akhri Pembukaan
+
+  /* Data Diri */
+  .container.dua {
+    height: auto;
+  }
+
+  .contain-dua {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Akhir Data Diri */
+
+  /* Pendidikan */
+  .container.tiga {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contain-tiga.satu {
+    font-size: 40px;
+    right: 0;
+  }
+
+  .contain-tiga.dua {
+    height: auto;
+    width: 360px;
+    left: 0;
+  }
+
+  .subcontain-tiga {
+    height: 100px;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  .garis.satu {
+    transform: rotate(28deg);
+    width: 260px;
+    left: 10px;
+    top: 80px;
+  }
+
+  .garis.dua {
+    transform: rotate(-27deg);
+    width: 210px;
+    left: 60px;
+    top: 90px;
+    position: absolute;
+  }
+  .garis.tiga {
+    transform: rotate(23deg);
+    width: 260px;
+    left: 55px;
+    top: 90px;
+    position: absolute;
+  }
+
+  .kartu .titik {
+    width: 15px;
+    height: 15px;
+  }
+
+  .titik.satu {
+    top: 10px;
+    left: 10px;
+  }
+  .titik.dua {
+    top: 38px;
+    left: 250px;
+  }
+  .titik.tiga {
+    top: 33px;
+    left: 60px;
+  }
+  .titik.empat {
+    top: 30px;
+    left: 296px;
+  }
+
+  .kartu {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    border-radius: 10px;
+    left: 0px;
+    top: 0;
+    transition: top 0.5s;
+    display: block;
+  }
+
+  .titik .ket {
+    width: 150px;
+    height: 20px;
+    line-height: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+  }
+
+  .titik .ket.kanan {
+    left: 0%;
+  }
+
+  .titik .ket.kiri {
+    right: 30%;
+  }
+  /* Akhir Pendidikan */
+
+  /* Kemapuan */
+  .container.empat {
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .contain-empat {
+    justify-content: center;
+  }
+
+  .contain-empat.satu {
+    font-size: 40px;
+  }
+
+  .subcontain-empat {
+    width: 200px;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+
+  .subcontain-empat p {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 10px;
+  }
+
+  .persen {
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
+    position: relative;
+  }
+
+  #lingkaran {
+    cx: 30;
+    cy: 30;
+    r: 30;
+  }
+
+  .persen.dua svg {
+    position: absolute;
+  }
+
+  .persen svg circle {
+    fill: none;
+    stroke-width: 7;
+    transform: translate(10px, 5px);
+  }
+
+  .persen.dua svg circle:nth-child(1) {
+    stroke: rgb(228, 244, 255, 0.1);
+    stroke-dashoffset: 0;
+  }
+
+  .persen.dua svg circle:nth-child(2) {
+    stroke: rgb(40, 121, 175);
+    stroke-dasharray: 150;
+  }
+
+  .persen.satu svg circle:nth-child(1) {
+    stroke: rgb(228, 244, 255, 0.1);
+    stroke-dashoffset: 0;
+  }
+
+  .persen.satu svg circle:nth-child(2) {
+    stroke: rgb(40, 121, 175);
+    stroke-dasharray: 170;
+  }
+  .persen.tiga svg circle:nth-child(1) {
+    stroke: rgb(228, 244, 255, 0.1);
+    stroke-dashoffset: 0;
+  }
+
+  .persen.tiga svg circle:nth-child(2) {
+    stroke: rgb(40, 121, 175);
+    stroke-dasharray: 160;
+  }
+
+  .kemampuan {
+    position: absolute;
+    font-size: 20px;
+  }
+  /* Akhir Kemampuan */
+
+  /* Penutup */
+  .penutup {
+    font-size: 30px;
+    width: 375px;
+  }
+  /* Akhir Penutup */
+
+  /* Organisasi */
+  .container.org {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: auto;
+  }
+
+  .contain-org.satu {
+    order: 2;
+  }
+  .contain-org.dua {
+    order: 1;
+    font-size: 40px;
+    padding-left: 50px;
+    left: 0px;
+  }
+
+  .contain-org.satu {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: firebrick solid 2px; */
+    right: 0px;
+  }
+
+  .subcontain-org {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: white solid 0.4px;
+  }
+  /* Akhir Organisasi */
+
+  /* Projekku */
+
+  .container.lima {
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  .contain-lima {
+    margin-right: 0%;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 500px;
+    border-radius: 40px;
+    box-shadow: black -3px 0px 10px 3px;
+    display: block;
+    background-color: rgb(40, 121, 175);
+    margin-top: 100px;
+    overflow: hidden;
+  }
+
+  .contain-lima.dua {
+    background-position: top;
+  }
+
+  .contain-lima.satu .isi {
+    display: none;
+  }
+  .contain-lima.dua .isi {
+    display: none;
+  }
+
+  .contain-lima.satu .judul {
+    position: relative;
+    top: 380px;
+    left: 0px;
+    width: 200px;
+    font-size: 10px;
+    padding: 30px 50px 50px 50px;
+    transition: none;
+  }
+
+  .contain-lima.dua .judul {
+    position: relative;
+    top: 380px;
+    left: 0px;
+    font-size: 10px;
+    padding: 30px 50px 50px 50px;
+    width: 200px;
+    transition: none;
+  }
+
+  #website1 {
+    right: 0px;
+    background-size: 300px auto;
+  }
+
+  #website3 {
+    right: 0px;
+    background-size: 300px auto;
+  }
+
+  #website2 {
+    left: 0px;
+    background-size: 300px auto;
+  }
+  /* Akhri Projekku */
+
+  /* Sosial Meidia */
+  .sosialMedia {
+    position: relative;
+    bottom: 50px;
+    right: 45px;
+  }
+
+  .sosialMedia ul li a .fa {
+    font-size: 20px;
+    color: rgba(255, 255, 255);
+  }
+
+  .sosialMedia ul li a::before {
+    top: 30px;
+    font-size: 20px;
+  }
+
+  .sosialMedia ul li:nth-child(1) a::before {
+    border-bottom: 2px solid white;
+  }
+  .sosialMedia ul li:nth-child(2) a::before {
+    border-bottom: 2px solid white;
+  }
+  .sosialMedia ul li:nth-child(3) a::before {
+    border-bottom: 2px solid white;
+  }
+  .sosialMedia ul li:nth-child(4) a::before {
+    border-bottom: 2px solid white;
+  }
+  /* Akhir Sosial Media */
+}
+
+/* Akhir Smartphone */
